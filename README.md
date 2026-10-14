@@ -1,6 +1,6 @@
 # Jones Thyristor Chopper
 
-Practical implementation and experimental validation of a Jones thyristor DC chopper with resistive and inductive loads, supported by MATLAB/Simulink.
+Practical implementation of a Jones thyristor chopper with resistive and inductive loads. I studied forced commutation, average output current and current ripple using laboratory measurements and MATLAB/Simulink.
 
 ## Practical implementation and experimental validation
 
@@ -10,7 +10,7 @@ Practical implementation and experimental validation of a Jones thyristor DC cho
 - Analysed forced commutation, commutation-capacitor sizing and thyristor current constraints.
 - Compared experimental results with theoretical predictions and Simulink results.
 
-The practical measurements and simulation outputs are identified separately in the French report. The image below is a simulation diagram, not a photograph of the physical setup.
+### Simulation circuit
 
 ![Simulation diagram](simulation-diagram.png)
 
@@ -18,15 +18,15 @@ The practical measurements and simulation outputs are identified separately in t
 
 ![Experimental oscilloscope waveforms](experimental-waveforms.png)
 
-Recorded waveforms from the practical implementation (see the French report for the operating conditions).
+Oscilloscope measurements from the practical work. Circuit settings and measurement conditions are given in the report.
 
 ## Repository contents
 
 | File | Purpose |
 | --- | --- |
 | [jones-chopper-report-fr.pdf](jones-chopper-report-fr.pdf) | Full French report: experimental setup, measurements, calculations and simulation comparisons. |
-| [results-and-waveforms.zip](results-and-waveforms.zip) | Complete archive of the supplied diagrams, waveforms and spectra. |
-| [simulation-diagram.png](simulation-diagram.png) | Simulation diagram preview shown below. |
+| [results-and-waveforms.zip](results-and-waveforms.zip) | Circuit diagrams, waveforms and spectra. |
+| [simulation-diagram.png](simulation-diagram.png) | Simulation circuit diagram. |
 | [jones_chopper.slx](jones_chopper.slx) | Editable Simulink model. |
 | [current-ripple-analysis.m](current-ripple-analysis.m) | MATLAB analysis script. |
 | [inductance-ripple-analysis.m](inductance-ripple-analysis.m) | MATLAB analysis script. |
@@ -40,14 +40,13 @@ Recorded waveforms from the practical implementation (see the French report for 
 
 ## Software requirements
 
-MATLAB is required for `.m` scripts. Simulink and the power-system blocks used by the model are required for `.slx` files. Some analytical scripts use `syms`/`vpasolve` and therefore require Symbolic Math Toolbox. The exact original MATLAB release is not specified; model compatibility should be checked in your installation.
+MATLAB and Simulink. The circuit models use power-system blocks. Scripts using `syms` or `vpasolve` also require Symbolic Math Toolbox.
 
 ## Project context
 
-Academic power-electronics project completed at the National Polytechnic School of Algiers in 2024/2025, including practical laboratory work and simulation. This repository presents Amani Mouaad’s portfolio version of a collaborative academic project.
+Power-electronics group project completed at the National Polytechnic School of Algiers in 2024/2025, combining practical laboratory work and simulation.
 
-**Portfolio author:** Amani Mouaad  
+**Author:** Amani Mouaad  
 **Supervision:** Pr. M. Mahmoudi and Mr. Benachour.
 
-The technical report is retained in French. Repository documentation is in English. The original source documents are preserved separately.
-
+The report is in French.
