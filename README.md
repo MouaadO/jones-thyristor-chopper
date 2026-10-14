@@ -51,6 +51,3 @@ Academic power-electronics project completed at the National Polytechnic School 
 
 The technical report is retained in French. Repository documentation is in English. The original source documents are preserved separately.
 
-## Reproducibility
-
-The supplied models and scripts are preserved for inspection and reproduction. They have not been rerun in MATLAB/Simulink during repository preparation; published experimental observations come from the supplied report and results.
